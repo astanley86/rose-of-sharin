@@ -1,0 +1,19 @@
+// ion-note {
+//     height: 100%;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+// ion-thumbnail img {
+//     height: 30px;
+//     width: 30px;
+// }
+ion-img {
+    min-height: 215px;
+    min-width: 100%;
+    background: url('/assets/imgs/default-flower.svg') no-repeat center;
+    background-size: contain;
+    // background
+}

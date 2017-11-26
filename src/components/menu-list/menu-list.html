@@ -1,0 +1,30 @@
+<ion-grid fixed>
+  <ion-row align-items-stretch>
+    
+    <ion-col *ngFor="let item of items" col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3 align-self-stretch align-self-center>
+      <ion-card>
+        <ion-img height="215px" width="100%" src="{{item.wikiImageUrl}}"></ion-img>
+        <ion-card-content>
+          <ion-card-title>
+            {{item.name}}
+          </ion-card-title>
+        </ion-card-content>
+
+        <ion-list>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="/assets/icon/potted-plant.svg" />
+            </ion-avatar>
+            <h2>{{item.type}}</h2>
+            <p>
+              {{item.datePosted}}
+            </p>
+            <button ion-button default item-end (click)="viewItem(item)">Find it!</button>
+          </ion-item>
+        </ion-list>
+
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
