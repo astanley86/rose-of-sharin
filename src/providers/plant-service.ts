@@ -11,6 +11,7 @@ import { Observable } from 'rxjs/Observable';
 export class PlantService {
 
   private url: string = 'http://localhost:3001';
+  // private url: string = 'http://rose.westus.cloudapp.azure.com';
 
   constructor(private http: Http) {
     console.log('Hello PlantService Provider');
